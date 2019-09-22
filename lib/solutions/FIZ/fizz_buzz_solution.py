@@ -15,11 +15,23 @@ def fizz_buzz(number):
     if (div5 or is_5):
         buzz = True
 
-    if (fizz and buzz):
-        return('fizz buzz')
-    if (fizz):
-        return('fizz')
-    if (buzz):
-        return('buzz') 
+    output = ''
 
-    return str(number)
+    if (fizz and buzz):
+        output = 'fizz buzz'
+    if (fizz):
+        output = 'fizz'
+    if (buzz):
+        output = 'buzz'
+
+    if (number_str == number_str[0] * len(number_str)):
+        if (output == '')
+            output = 'deluxe'
+        else:
+            output = output + ' deluxe'
+
+    if (output == ''):
+        return str(number)
+    else:
+        return output
+
