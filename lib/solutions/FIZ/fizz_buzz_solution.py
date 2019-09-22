@@ -24,6 +24,11 @@ def fizz_buzz(number):
     if (fizz and buzz):
         output = 'fizz buzz'
  
+    if (number %2 == 0):    #check whether odd or even
+        deluxe_str = 'deluxe'   #even
+    else:
+        deluxe_str = 'fake deluxe'  #odd
+
     if (number_str == number_str[0] * len(number_str) and number > 10):
         if (output == ''):
             output = 'deluxe'
@@ -34,3 +39,4 @@ def fizz_buzz(number):
         return str(number)
     else:
         return output
+
