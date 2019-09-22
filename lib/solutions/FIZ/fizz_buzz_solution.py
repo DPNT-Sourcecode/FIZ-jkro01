@@ -31,12 +31,13 @@ def fizz_buzz(number):
 
     if (number_str == number_str[0] * len(number_str) and number > 10):
         if (output == ''):
-            output = 'deluxe'
+            output = deluxe_str
         else:
-            output = output + ' deluxe'
+            output = output + ' ' + deluxe_str
 
     if (output == ''):
         return str(number)
     else:
         return output
+
 
