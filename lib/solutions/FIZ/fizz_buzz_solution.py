@@ -23,4 +23,3 @@ def fizz_buzz(number):
         return('buzz') 
 
     return str(number)
-

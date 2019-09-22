@@ -10,6 +10,3 @@ class TestFiz():
         assert fizz_buzz_solution.fizz_buzz(301) == 'fizz'
         assert fizz_buzz_solution.fizz_buzz(551) == 'buzz'
 
-
-
-
