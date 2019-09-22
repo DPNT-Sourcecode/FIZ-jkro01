@@ -15,6 +15,12 @@ def fizz_buzz(number):
     if (div5 or is_5):
         buzz = True
 
+    deluxe_number = False       #new deluxe rule
+    if (div3 and is_3):
+        deluxe_number = True
+    if (div5 and is_5):
+        deluxe_number = True
+        
     output = ''
 
     if (fizz):
@@ -29,7 +35,7 @@ def fizz_buzz(number):
     else:
         deluxe_str = 'fake deluxe'  #odd
 
-    if (number_str == number_str[0] * len(number_str) and number > 10):
+    if (deluxe_number):  #changed deluxe rule
         if (output == ''):
             output = deluxe_str
         else:
@@ -39,5 +45,6 @@ def fizz_buzz(number):
         return str(number)
     else:
         return output
+
 
 
