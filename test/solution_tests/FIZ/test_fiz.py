@@ -12,5 +12,3 @@ class TestFiz():
         assert fizz_buzz_solution.fizz_buzz(33) == 'fizz deluxe'
         assert fizz_buzz_solution.fizz_buzz(55) == 'buzz deluxe'
 
-
-
