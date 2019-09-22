@@ -25,7 +25,7 @@ def fizz_buzz(number):
         output = 'buzz'
 
     if (number_str == number_str[0] * len(number_str) and number > 10):
-        if (output == '')
+        if (output == ''):
             output = 'deluxe'
         else:
             output = output + ' deluxe'
@@ -34,5 +34,6 @@ def fizz_buzz(number):
         return str(number)
     else:
         return output
+
 
 
